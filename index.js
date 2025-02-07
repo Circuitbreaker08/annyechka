@@ -15,6 +15,9 @@ Meet our demands within
 Byeeeeeeeeeeeeeee`
 
 window.onload = () => {
-    note = document.getElementById("note")
-    console.log(note.innerHTML)
+    for (i = 0; i < message.length; i++) {
+        console.log(message[i])
+    }
+    //note = document.getElementById("note")
+    //console.log(note.innerHTML)
 }
