@@ -39,7 +39,7 @@ window.onload = () => {
     let out = ""
     for (i = 0; i < message.length; i++) {
         let char = ""
-        char += "<p style=\"font-family: " + randomFont() + "; font-size: " + randomSize() + "px\n>" + message[i] + "</p>"
+        char += "<span style=\"font-family: " + randomFont() + "; font-size: " + randomSize() + "px\n>" + message[i] + "</span>"
         out += char
     }
     document.getElementById("note").innerHTML = out
