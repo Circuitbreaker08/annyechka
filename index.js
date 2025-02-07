@@ -28,18 +28,18 @@ function randomFont() {
         "Courier New",
         "Brush Script MT"
 
-    ][Math.random() % 9]
+    ][Math.floor(Math.random() * 9)]
 }
 
 function randomSize() {
-    return Math.random() % 20 + 9
+    return Math.floor(Math.random() * 20) + 9
 }
 
 window.onload = () => {
     let out = ""
     for (i = 0; i < message.length; i++) {
         let char = ""
-        char += "<p style=\"font-family: " + randomFont() + "; font-size: " + randomSize() + "px\n></p>"
+        char += "<p style=\"font-family: " + randomFont() + "; font-size: " + randomSize() + "px\n>" + message[i] + "</p>"
         out += char
     }
     document.getElementById("note").innerHTML = out
